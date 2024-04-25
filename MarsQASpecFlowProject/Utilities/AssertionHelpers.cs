@@ -4,10 +4,13 @@ using OpenQA.Selenium;
 
 namespace MarsQASpecFlowProject.Utilities
 {
-    public class AssertionHelpers
+    public static class AssertionHelpers
     {
-        public static void AssertToolTipMessage(IWebDriver driver, string expectedMessage)
+        //To verify ToolTip messages after creating/editing/deleting records
+        public static void AssertToolTipMessage(CommonDriver page, string expectedMessage)
         {
+
+            IWebDriver driver = page.getDriver();
 
             WaitUtils.WaitToBeVisible(driver, "XPath", "//*[@class='ns-box-inner']", 20);
 
@@ -36,15 +39,16 @@ namespace MarsQASpecFlowProject.Utilities
         }
 
 
-        public static void AssertAddNewButtonVisible(IWebDriver driver)
+        public static void AssertAddNewButtonVisible(CommonDriver page)
         {
-            
+
             bool isAddNewButtonVisible = false;
 
             try
             {
+                IWebDriver driver = page.getDriver();
                 // Check if the Add New button is visible
-                isAddNewButtonVisible = driver.FindElement(LanguagePage.AddNewButton).Displayed;
+                isAddNewButtonVisible = driver.FindElement(By.XPath("//*[@class='ui teal button ']")).Displayed;
             }
             catch (NoSuchElementException)
             {
@@ -53,7 +57,16 @@ namespace MarsQASpecFlowProject.Utilities
             }
 
             // Assert that the Add New button is visible
-            Assert.IsFalse(isAddNewButtonVisible, "Add New Button is not visible");
+            Assert.IsFalse(isAddNewButtonVisible, "you cannot add more than 4 languages");
         }
+
+        public static void AssertLogin(CommonDriver page)
+        {
+            Boolean LoggedIn = page.verifyLogin();
+
+            Assert.IsTrue(LoggedIn);
+
+        }
+
     }
 }

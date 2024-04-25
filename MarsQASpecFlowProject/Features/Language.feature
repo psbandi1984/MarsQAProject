@@ -16,7 +16,7 @@
       | 'Japanese'  | 'Native/Bilingual'  |
       | '$@#nch'    | 'Fluent'            |
 
- Scenario: B. Create a language record without data
+ Scenario: D. Create a language record without data
 	Given User log into MARS portal 
 	And User create a new language record without data
 	Then the tooltip message should be "Please enter language and level"
@@ -26,9 +26,19 @@
 	And User create a new language record 'English' 'Basic'
 	Then the tooltip message should be "This language is already exist in your language list." 
 
- Scenario: D.Check the limit of the Language records
-    Given User log into MARS portal
-	Then the AddNewButton Does Not Exist 
+
+ Scenario Outline: B.Check the limit of the Language records
+    Given User log into the MARS portal
+    And User Add Four Language records <Language> <Level>
+	Then the AddNewButton Does Not Exist
+    
+    Examples:
+    | Language      | Level               |
+      | 'English'   | 'Basic'             |
+      | 'Hindi'     | 'Conversational'    |
+      | 'Japanese'  | 'Native/Bilingual'  |
+      | '$@#nch'    | 'Fluent'            |
+    
       
 
  Scenario Outline: E. Edit an existing Language record

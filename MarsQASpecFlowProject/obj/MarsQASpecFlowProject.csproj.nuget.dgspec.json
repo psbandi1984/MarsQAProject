@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\gitProjects\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj": {}
+    "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj": {}
   },
   "projects": {
-    "C:\\gitProjects\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj": {
+    "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\gitProjects\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj",
+        "projectUniqueName": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj",
         "projectName": "MarsQASpecFlowProject",
-        "projectPath": "C:\\gitProjects\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj",
+        "projectPath": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\gitProjects\\MarsQASpecFlowProject\\obj\\",
+        "outputPath": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

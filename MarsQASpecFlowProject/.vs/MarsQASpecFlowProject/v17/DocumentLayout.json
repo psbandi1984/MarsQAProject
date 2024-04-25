@@ -1,50 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\gitProjects\\MarsQASpecFlowProject\\",
+  "WorkspaceRootPath": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaspecflowproject\\features\\skill.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:features\\skill.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaspecflowproject\\features\\language.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:features\\language.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaspecflowproject\\stepdefinitions\\skillstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:stepdefinitions\\skillstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaspecflowproject\\pages\\skillspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:pages\\skillspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaspecflowproject\\stepdefinitions\\languagestepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\stepdefinitions\\languagestepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:stepdefinitions\\languagestepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaspecflowproject\\pages\\languagepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\features\\language.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:features\\language.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\pages\\languagepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:pages\\languagepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaspecflowproject\\pages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\features\\language.feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:features\\language.feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\pages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:pages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaspecflowproject\\utilities\\waitutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:utilities\\waitutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaspecflowproject\\utilities\\assertionhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\utilities\\assertionhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:utilities\\assertionhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaspecflowproject\\utilities\\commondriver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\Downloads\\MARS_Onboarding_US2-feature-Skill\\MARS_Onboarding_US2-feature-Skill\\OnBoardingTask\\OnBoardingTask\\Features\\Language.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\utilities\\testdatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:utilities\\testdatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\stepdefinitions\\skillstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:stepdefinitions\\skillstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\utilities\\commondriver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:utilities\\commondriver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaspecflowproject\\features\\language.feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:features\\language.feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\hooks\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:hooks\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\pages\\skillspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:pages\\skillspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\features\\skill.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:features\\skill.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\utilities\\waitutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:utilities\\waitutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|c:\\gitprojects\\marsqaproject\\marsqaspecflowproject\\marsqaspecflowproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A04D4887-1A49-4BF4-8AAF-187EF1A31449}|MarsQASpecFlowProject.csproj|solutionrelative:marsqaspecflowproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,40 +76,18 @@
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SkillStepDefinitions.cs",
-              "DocumentMoniker": "C:\\gitProjects\\MarsQASpecFlowProject\\StepDefinitions\\SkillStepDefinitions.cs",
-              "RelativeDocumentMoniker": "StepDefinitions\\SkillStepDefinitions.cs",
-              "ToolTip": "C:\\gitProjects\\MarsQASpecFlowProject\\StepDefinitions\\SkillStepDefinitions.cs",
-              "RelativeToolTip": "StepDefinitions\\SkillStepDefinitions.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAAAEAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T23:20:12.966Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Skill.feature",
-              "DocumentMoniker": "C:\\gitProjects\\MarsQASpecFlowProject\\Features\\Skill.feature",
-              "RelativeDocumentMoniker": "Features\\Skill.feature",
-              "ToolTip": "C:\\gitProjects\\MarsQASpecFlowProject\\Features\\Skill.feature",
-              "RelativeToolTip": "Features\\Skill.feature",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAABwAAAAnAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-04-16T23:13:25.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "LanguageStepDefinitions.cs",
-              "DocumentMoniker": "C:\\gitProjects\\MarsQASpecFlowProject\\StepDefinitions\\LanguageStepDefinitions.cs",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\StepDefinitions\\LanguageStepDefinitions.cs",
               "RelativeDocumentMoniker": "StepDefinitions\\LanguageStepDefinitions.cs",
-              "ToolTip": "C:\\gitProjects\\MarsQASpecFlowProject\\StepDefinitions\\LanguageStepDefinitions.cs",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\StepDefinitions\\LanguageStepDefinitions.cs",
               "RelativeToolTip": "StepDefinitions\\LanguageStepDefinitions.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAqwFoAAAAIAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAAAEwAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T13:02:14.331Z",
               "EditorCaption": ""
@@ -103,107 +96,181 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Language.feature",
-              "DocumentMoniker": "C:\\gitProjects\\MarsQASpecFlowProject\\Features\\Language.feature",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Features\\Language.feature",
               "RelativeDocumentMoniker": "Features\\Language.feature",
-              "ToolTip": "C:\\gitProjects\\MarsQASpecFlowProject\\Features\\Language.feature",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Features\\Language.feature",
               "RelativeToolTip": "Features\\Language.feature",
-              "ViewState": "AQIAACYAAAAAAAAAAAAAACEAAAArAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB8AAAAqAAAA",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
               "WhenOpened": "2024-04-17T13:01:22.638Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SkillsPage.cs",
-              "DocumentMoniker": "C:\\gitProjects\\MarsQASpecFlowProject\\Pages\\SkillsPage.cs",
-              "RelativeDocumentMoniker": "Pages\\SkillsPage.cs",
-              "ToolTip": "C:\\gitProjects\\MarsQASpecFlowProject\\Pages\\SkillsPage.cs",
-              "RelativeToolTip": "Pages\\SkillsPage.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAqwCMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T08:51:30.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "LanguagePage.cs",
-              "DocumentMoniker": "C:\\gitProjects\\MarsQASpecFlowProject\\Pages\\LanguagePage.cs",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Pages\\LanguagePage.cs",
               "RelativeDocumentMoniker": "Pages\\LanguagePage.cs",
-              "ToolTip": "C:\\gitProjects\\MarsQASpecFlowProject\\Pages\\LanguagePage.cs",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Pages\\LanguagePage.cs",
               "RelativeToolTip": "Pages\\LanguagePage.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAABkAAAARAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAF0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T08:51:09.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginPage.cs",
-              "DocumentMoniker": "C:\\gitProjects\\MarsQASpecFlowProject\\Pages\\LoginPage.cs",
-              "RelativeDocumentMoniker": "Pages\\LoginPage.cs",
-              "ToolTip": "C:\\gitProjects\\MarsQASpecFlowProject\\Pages\\LoginPage.cs",
-              "RelativeToolTip": "Pages\\LoginPage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAvwAkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T13:02:39.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WaitUtils.cs",
-              "DocumentMoniker": "C:\\gitProjects\\MarsQASpecFlowProject\\Utilities\\WaitUtils.cs",
-              "RelativeDocumentMoniker": "Utilities\\WaitUtils.cs",
-              "ToolTip": "C:\\gitProjects\\MarsQASpecFlowProject\\Utilities\\WaitUtils.cs",
-              "RelativeToolTip": "Utilities\\WaitUtils.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAmwCMAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T03:16:30.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "AssertionHelpers.cs",
-              "DocumentMoniker": "C:\\gitProjects\\MarsQASpecFlowProject\\Utilities\\AssertionHelpers.cs",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Utilities\\AssertionHelpers.cs",
               "RelativeDocumentMoniker": "Utilities\\AssertionHelpers.cs",
-              "ToolTip": "C:\\gitProjects\\MarsQASpecFlowProject\\Utilities\\AssertionHelpers.cs",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Utilities\\AssertionHelpers.cs",
               "RelativeToolTip": "Utilities\\AssertionHelpers.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAABsAAAANAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAD4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T02:54:22.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Pages\\LoginPage.cs",
+              "RelativeDocumentMoniker": "Pages\\LoginPage.cs",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Pages\\LoginPage.cs",
+              "RelativeToolTip": "Pages\\LoginPage.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAACAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T13:02:39.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Language.feature.cs",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Features\\Language.feature.cs",
+              "RelativeDocumentMoniker": "Features\\Language.feature.cs",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Features\\Language.feature.cs",
+              "RelativeToolTip": "Features\\Language.feature.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T00:30:38.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Language.feature",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\MARS_Onboarding_US2-feature-Skill\\MARS_Onboarding_US2-feature-Skill\\OnBoardingTask\\OnBoardingTask\\Features\\Language.feature",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\HP\\Downloads\\MARS_Onboarding_US2-feature-Skill\\MARS_Onboarding_US2-feature-Skill\\OnBoardingTask\\OnBoardingTask\\Features\\Language.feature",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\MARS_Onboarding_US2-feature-Skill\\MARS_Onboarding_US2-feature-Skill\\OnBoardingTask\\OnBoardingTask\\Features\\Language.feature",
+              "RelativeToolTip": "..\\..\\..\\Users\\HP\\Downloads\\MARS_Onboarding_US2-feature-Skill\\MARS_Onboarding_US2-feature-Skill\\OnBoardingTask\\OnBoardingTask\\Features\\Language.feature",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-04-25T10:01:01.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TestDataManager.cs",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Utilities\\TestDataManager.cs",
+              "RelativeDocumentMoniker": "Utilities\\TestDataManager.cs",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Utilities\\TestDataManager.cs",
+              "RelativeToolTip": "Utilities\\TestDataManager.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T11:12:15.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SkillStepDefinitions.cs",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\StepDefinitions\\SkillStepDefinitions.cs",
+              "RelativeDocumentMoniker": "StepDefinitions\\SkillStepDefinitions.cs",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\StepDefinitions\\SkillStepDefinitions.cs",
+              "RelativeToolTip": "StepDefinitions\\SkillStepDefinitions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T23:20:12.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
               "Title": "CommonDriver.cs",
-              "DocumentMoniker": "C:\\gitProjects\\MarsQASpecFlowProject\\Utilities\\CommonDriver.cs",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Utilities\\CommonDriver.cs",
               "RelativeDocumentMoniker": "Utilities\\CommonDriver.cs",
-              "ToolTip": "C:\\gitProjects\\MarsQASpecFlowProject\\Utilities\\CommonDriver.cs",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Utilities\\CommonDriver.cs",
               "RelativeToolTip": "Utilities\\CommonDriver.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAOAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T23:07:24.572Z"
+              "WhenOpened": "2024-04-14T23:07:24.572Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Language.feature.cs",
-              "DocumentMoniker": "C:\\gitProjects\\MarsQASpecFlowProject\\Features\\Language.feature.cs",
-              "RelativeDocumentMoniker": "Features\\Language.feature.cs",
-              "ToolTip": "C:\\gitProjects\\MarsQASpecFlowProject\\Features\\Language.feature.cs",
-              "RelativeToolTip": "Features\\Language.feature.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Hooks.cs",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Hooks\\Hooks.cs",
+              "RelativeDocumentMoniker": "Hooks\\Hooks.cs",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Hooks\\Hooks.cs",
+              "RelativeToolTip": "Hooks\\Hooks.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T00:30:38.999Z"
+              "WhenOpened": "2024-04-23T03:38:37.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SkillsPage.cs",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Pages\\SkillsPage.cs",
+              "RelativeDocumentMoniker": "Pages\\SkillsPage.cs",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Pages\\SkillsPage.cs",
+              "RelativeToolTip": "Pages\\SkillsPage.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T08:51:30.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Skill.feature",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Features\\Skill.feature",
+              "RelativeDocumentMoniker": "Features\\Skill.feature",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Features\\Skill.feature",
+              "RelativeToolTip": "Features\\Skill.feature",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-04-16T23:13:25.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WaitUtils.cs",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Utilities\\WaitUtils.cs",
+              "RelativeDocumentMoniker": "Utilities\\WaitUtils.cs",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\Utilities\\WaitUtils.cs",
+              "RelativeToolTip": "Utilities\\WaitUtils.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T03:16:30.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MarsQASpecFlowProject.csproj",
+              "DocumentMoniker": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj",
+              "RelativeDocumentMoniker": "MarsQASpecFlowProject.csproj",
+              "ToolTip": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj",
+              "RelativeToolTip": "MarsQASpecFlowProject.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-23T03:37:28.992Z"
             }
           ]
         }

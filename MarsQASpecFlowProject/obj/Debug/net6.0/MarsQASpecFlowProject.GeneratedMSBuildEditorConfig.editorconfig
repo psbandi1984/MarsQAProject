@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MarsQASpecFlowProject
-build_property.ProjectDir = C:\gitProjects\MarsQASpecFlowProject\
+build_property.ProjectDir = C:\gitProjects\MarsQAProject\MarsQASpecFlowProject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

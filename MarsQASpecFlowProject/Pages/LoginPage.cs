@@ -1,31 +1,36 @@
-﻿using NUnit.Framework;
+﻿using MarsQASpecFlowProject.Utilities;
+using NUnit.Framework;
 using OpenQA.Selenium;
 namespace MarsQASpecFlowProject.Pages
 {
 
-    public class LoginPage
+    public class LoginPage : CommonDriver
     {
         
-        //Locators
-        public static By SignINButton = By.XPath("//*[contains(text(),\"Sign\")]");
-        public static By EmailAddressTextbox = By.XPath("//input[@Placeholder='Email address']");
-        public static By PasswordTextbox = By.XPath("//input[@Placeholder='Password']");
-        public static By LoginButton = By.XPath("//button[contains(text(),'Login')]");
-        public static By SkillTab = By.XPath("//a[@data-tab='second']");
+        public LoginPage()
+        {
+            
+        }
+        public LoginPage(IWebDriver driver) : base(driver) 
+        {
 
+        }
+
+        //Web Elements
+        public IWebElement SignINButton => driver.FindElement(By.XPath("//*[contains(text(),\"Sign\")]"));
+        public IWebElement EmailAddressTextbox => driver.FindElement(By.XPath("//input[@Placeholder='Email address']"));
+        public IWebElement PasswordTextbox => driver.FindElement(By.XPath("//input[@Placeholder='Password']"));
+        public IWebElement LoginButton => driver.FindElement(By.XPath("//button[contains(text(),'Login')]"));
+        
         
         //Method
-        public void LoginSteps(IWebDriver driver)
+        public void LoginSteps()
         {
-            // launch Mars portal
-            driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("http://localhost:5000");
-            Thread.Sleep(1000);
-
             try
             {
                 // Identify Sign In button
-                driver.FindElement(SignINButton).Click();
+                SignINButton.Click();
 
             }
             catch(Exception ex) 
@@ -35,21 +40,14 @@ namespace MarsQASpecFlowProject.Pages
            
 
             // identify the EmailAddress textbox and enter a valid username
-            driver.FindElement(EmailAddressTextbox).SendKeys("pb842253@gmail.com");
+            EmailAddressTextbox.SendKeys("pb842253@gmail.com");
 
             // identify password textbox and enter valid password
-            driver.FindElement(PasswordTextbox).SendKeys("@pb123456");
+            PasswordTextbox.SendKeys("@pb123456");
 
             // click on login button
-            driver.FindElement(LoginButton).Click();
+            LoginButton.Click();
             Thread.Sleep(2000);
-        }
-
-        //To navigate to Skills tab in Profile Page
-        public void GoToSkillsTab(IWebDriver driver)
-        {
-            driver.FindElement(SkillTab).Click();
-            
         }
 
     }
