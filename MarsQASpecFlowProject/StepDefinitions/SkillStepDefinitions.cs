@@ -19,7 +19,7 @@ namespace MarsQASpecFlowProject.StepDefinitions
         public void GivenUserLogsIntoMarsPortal()
         {
             AssertionHelpers.AssertLogin(skillsPageObject);
-            TestDataManager.ClearSkillIfPresent(skillsPageObject);
+            //TestDataManager.ClearSkillIfPresent(skillsPageObject);
         }
     
 
@@ -45,7 +45,7 @@ namespace MarsQASpecFlowProject.StepDefinitions
         public void GivenUserLogsIntoMARSPortal()
         {
             AssertionHelpers.AssertLogin(skillsPageObject);
-            TestDataManager.ClearSkillIfPresent(skillsPageObject);
+            //TestDataManager.ClearSkillIfPresent(skillsPageObject);
         }
 
         [When(@"User navigates to skill module")]

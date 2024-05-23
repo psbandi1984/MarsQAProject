@@ -10,11 +10,11 @@
         "dependencies": {
           "FluentAssertions": "6.12.0",
           "Microsoft.NET.Test.Sdk": "17.9.0",
-          "NUnit": "3.13.1",
+          "NUnit": "3.13.3",
           "NUnit3TestAdapter": "4.5.0",
-          "Selenium.Support": "4.19.0",
-          "Selenium.WebDriver": "4.19.0",
-          "Selenium.WebDriver.ChromeDriver": "123.0.6312.12200",
+          "Selenium.Support": "4.20.0",
+          "Selenium.WebDriver": "4.20.0",
+          "Selenium.WebDriver.ChromeDriver": "124.0.6367.9100",
           "SeleniumExtras.WaitHelpers": "1.0.2",
           "SpecFlow.NUnit": "3.9.74",
           "SpecFlow.Plus.LivingDocPlugin": "3.9.57"
@@ -358,14 +358,14 @@
           }
         }
       },
-      "NUnit/3.13.1": {
+      "NUnit/3.13.3": {
         "dependencies": {
           "NETStandard.Library": "2.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/nunit.framework.dll": {
-            "assemblyVersion": "3.13.1.0",
-            "fileVersion": "3.13.1.0"
+            "assemblyVersion": "3.13.3.0",
+            "fileVersion": "3.13.3.0"
           }
         }
       },
@@ -412,9 +412,9 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
-      "Selenium.Support/4.19.0": {
+      "Selenium.Support/4.20.0": {
         "dependencies": {
-          "Selenium.WebDriver": "4.19.0"
+          "Selenium.WebDriver": "4.20.0"
         },
         "runtime": {
           "lib/netstandard2.0/WebDriver.Support.dll": {
@@ -423,7 +423,7 @@
           }
         }
       },
-      "Selenium.WebDriver/4.19.0": {
+      "Selenium.WebDriver/4.20.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
@@ -434,10 +434,10 @@
           }
         }
       },
-      "Selenium.WebDriver.ChromeDriver/123.0.6312.12200": {},
+      "Selenium.WebDriver.ChromeDriver/124.0.6367.9100": {},
       "SeleniumExtras.WaitHelpers/1.0.2": {
         "dependencies": {
-          "Selenium.WebDriver": "4.19.0"
+          "Selenium.WebDriver": "4.20.0"
         },
         "runtime": {
           "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {
@@ -473,7 +473,7 @@
       },
       "SpecFlow.NUnit/3.9.74": {
         "dependencies": {
-          "NUnit": "3.13.1",
+          "NUnit": "3.13.3",
           "SpecFlow": "3.9.74",
           "SpecFlow.Tools.MsBuild.Generation": "3.9.74"
         },
@@ -1114,12 +1114,12 @@
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
-    "NUnit/3.13.1": {
+    "NUnit/3.13.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vWBvrSelmTYwqHWvO3dA63z7cOpaFR/3nJ9MMVLBkWeaWa7oiglPPm5g1h96B4i2XXqjFexxhR5MyMjmIJYPfg==",
-      "path": "nunit/3.13.1",
-      "hashPath": "nunit.3.13.1.nupkg.sha512"
+      "sha512": "sha512-KNPDpls6EfHwC3+nnA67fh5wpxeLb3VLFAfLxrug6JMYDLHH6InaQIWR7Sc3y75d/9IKzMksH/gi08W7XWbmnQ==",
+      "path": "nunit/3.13.3",
+      "hashPath": "nunit.3.13.3.nupkg.sha512"
     },
     "NUnit3TestAdapter/4.5.0": {
       "type": "package",
@@ -1233,26 +1233,26 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
     },
-    "Selenium.Support/4.19.0": {
+    "Selenium.Support/4.20.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mMghl/3vzRNbE1FA57Iqpw8206DCKekvXl+6PKi811/fg98HSomrknvHgI4aZbfJEuL7Y2IKFt1oBbbUQT0elQ==",
-      "path": "selenium.support/4.19.0",
-      "hashPath": "selenium.support.4.19.0.nupkg.sha512"
+      "sha512": "sha512-ANrmrsgGUIP53wHxBcAEAsAMpcGr1D7Dtb8wjftuqyxBl/GmX9tU9uN5WDmEVo4WQI32OWgc/KG1ugsOmlr96w==",
+      "path": "selenium.support/4.20.0",
+      "hashPath": "selenium.support.4.20.0.nupkg.sha512"
     },
-    "Selenium.WebDriver/4.19.0": {
+    "Selenium.WebDriver/4.20.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rguRY+Kbiow0s7RHtnHXnJdMgsmqAOOtv7ZGBtIQ1DbErkFtksrZHdUMcKyMK6VKNMmfsViqcCDGw4mPSPT70w==",
-      "path": "selenium.webdriver/4.19.0",
-      "hashPath": "selenium.webdriver.4.19.0.nupkg.sha512"
+      "sha512": "sha512-Z9rYD5t2d7nBhjluj5MxnrTqMjrfGDQSXWThIdBMwgpVCGTcHMYot7nWV3XoVnUtUBb5wrYag++GV9vq/evTZQ==",
+      "path": "selenium.webdriver/4.20.0",
+      "hashPath": "selenium.webdriver.4.20.0.nupkg.sha512"
     },
-    "Selenium.WebDriver.ChromeDriver/123.0.6312.12200": {
+    "Selenium.WebDriver.ChromeDriver/124.0.6367.9100": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IDN7gQ7wlXmV05+Y4K6UdnY36H/SrIxMUqAnKtT6yEBnVNX4K03rHRs8zkMM+EC78V0Xt+PFpyDUYto+jG4t/w==",
-      "path": "selenium.webdriver.chromedriver/123.0.6312.12200",
-      "hashPath": "selenium.webdriver.chromedriver.123.0.6312.12200.nupkg.sha512"
+      "sha512": "sha512-7reJ4ntq+LcvoW606W9xXYT4i4Uiy5Q0D58Ro09ITTerrHJocI7pF5G/0b9jx9DQJT5djhTfr1WqZK3RDjOCMQ==",
+      "path": "selenium.webdriver.chromedriver/124.0.6367.9100",
+      "hashPath": "selenium.webdriver.chromedriver.124.0.6367.9100.nupkg.sha512"
     },
     "SeleniumExtras.WaitHelpers/1.0.2": {
       "type": "package",

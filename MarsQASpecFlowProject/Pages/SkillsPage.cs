@@ -28,6 +28,7 @@ namespace MarsQASpecFlowProject.Pages
         public IWebElement UpdateButton => driver.FindElement(By.XPath("//input[@value='Update']"));
         public IWebElement EditChooseLevelOption => driver.FindElement(By.XPath("//*[@value='\" + newLevel + \"']"));
         public IWebElement LastDeleteIcon => driver.FindElement(By.XPath("//div[@data-tab='second']//table/tbody[last()]/tr/td[3]/span[2]"));
+        public IList<IWebElement> SkillsRows => driver.FindElements(By.XPath("//div[@data-tab='second']//table/tbody"));
 
 
         //Methods

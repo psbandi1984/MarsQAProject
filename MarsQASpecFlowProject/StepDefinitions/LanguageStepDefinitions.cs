@@ -1,6 +1,8 @@
 using MarsQASpecFlowProject.Pages;
 using MarsQASpecFlowProject.Utilities;
 using OpenQA.Selenium;
+using TechTalk.SpecFlow;
+using TechTalk.SpecFlow.Assist;
 
 namespace MarsQASpecFlowProject.StepDefinitions
 {
@@ -8,12 +10,20 @@ namespace MarsQASpecFlowProject.StepDefinitions
     public class LanguageStepDefinitions
     {
         private LanguagePage languagePageObject;
-        private readonly IWebDriver driver;
-        public LanguageStepDefinitions(IWebDriver driver)
+        //private readonly IWebDriver driver;
+        public LanguageStepDefinitions(LanguagePage languagePageObject)
         {
-            languagePageObject = new LanguagePage(driver);
-            this.driver = driver;
+            this.languagePageObject = languagePageObject;
+            //this.driver = driver;
         }
+
+
+        [Given(@"User Cleanup data")]
+        public void GivenUserCleanupData()
+        {
+            TestDataManager.ClearLanguage(languagePageObject);
+        }
+
 
 
         //Testcase 1,2,3 & 4
@@ -21,7 +31,7 @@ namespace MarsQASpecFlowProject.StepDefinitions
         public void GivenUserLogIntoMarsPortal()
         {
             AssertionHelpers.AssertLogin(languagePageObject);
-            TestDataManager.ClearLanguageIfPresent(languagePageObject);
+           
         }
 
         [When(@"User navigate to Language module")]
@@ -48,7 +58,7 @@ namespace MarsQASpecFlowProject.StepDefinitions
         public void GivenUserLogIntoMARSPortal()
         {
             AssertionHelpers.AssertLogin(languagePageObject);
-            TestDataManager.ClearLanguageIfPresent(languagePageObject);
+            
         }
 
         [Given(@"User create a new language record without data")]
@@ -71,11 +81,6 @@ namespace MarsQASpecFlowProject.StepDefinitions
             AssertionHelpers.AssertLogin(languagePageObject);
         }
 
-        [Given(@"User Add Four Language records '([^']*)' '([^']*)'")]
-        public void GivenUserAddFourLanguageRecords(string Language, string Level)
-        {
-            languagePageObject.CreateLanguageRecord(Language, Level);
-        }
 
         [Then(@"the AddNewButton Does Not Exist")]
         public void ThenTheAddNewButtonDoesNotExist()
@@ -90,9 +95,10 @@ namespace MarsQASpecFlowProject.StepDefinitions
         }
 
         [When(@"User delete an existing Language record '([^']*)'")]
-        public void WhenUserDeleteAnExistingLanguageRecord(string French)
+        public void WhenUserDeleteAnExistingLanguageRecord(string newLanguage)
         {
-            languagePageObject.DeleteLanguageRecord(French);
+            languagePageObject.DeletespecificLanguageRecords(newLanguage);
+            
         }
 
     }

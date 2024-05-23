@@ -2,7 +2,6 @@
 using MarsQASpecFlowProject.Pages;
 using MarsQASpecFlowProject.Utilities;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
 namespace MarsQASpecFlowProject.Hooks
 {
@@ -26,6 +25,7 @@ namespace MarsQASpecFlowProject.Hooks
             loginPageObject.LoginSteps();
             
             _container.RegisterInstanceAs<IWebDriver>(driver);
+            _container.RegisterInstanceAs<LanguagePage>(new LanguagePage(driver));
         }
 
         [AfterScenario]

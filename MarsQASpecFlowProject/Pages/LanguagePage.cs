@@ -6,17 +6,20 @@ namespace MarsQASpecFlowProject.Pages
 {
     public class LanguagePage : CommonDriver
     {
-        
+        //Parameterized Constructor
         public LanguagePage(IWebDriver driver) : base(driver)
         {
             
         }
 
+        // Default Constructor
         public LanguagePage() 
-        { 
+        {
+            
         }
 
         // Web Elements
+
         public IWebElement LanguageTab => driver.FindElement(By.XPath("//a[contains(text(),'Languages')]"));
         public IWebElement AddNewButton => driver.FindElement(By.XPath("//*[@class='ui teal button ']"));
         public IWebElement LanguageTextbox => driver.FindElement(By.XPath("//*[@placeholder='Add Language']"));
@@ -30,8 +33,9 @@ namespace MarsQASpecFlowProject.Pages
         public IWebElement EditPencilIcon => driver.FindElement(By.XPath("//div[@id='account-profile-section']//form//table//tbody[2]/tr/td[3]/span[1]/i"));
         public IWebElement UpdateButton => driver.FindElement(By.XPath("//input[@value='Update']"));
         public IWebElement EditChooseLevelOption => driver.FindElement(By.XPath("//*[@value='\" + newLevel + \"']"));
-        public IWebElement LastDeleteIcon => driver.FindElement(By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody[last()]/tr/td[3]/span[2]"));
+        public IWebElement LastDeleteIcon => driver.FindElement(By.XPath("//table[1]/tbody[last()]//i[@class='remove icon']"));
 
+        public IList<IWebElement> LanguageRows => driver.FindElements(By.XPath("//div[@data-tab='first']//table/tbody"));
 
         //Methods
         public void Click_LanguageTab()
@@ -50,14 +54,16 @@ namespace MarsQASpecFlowProject.Pages
             LanguageTextbox.SendKeys(Language);
 
             // Select Language Level from dropdown list
+            WaitUtils.WaitToBeVisible(driver, "Xpath", "chooseLevelDropdown", 5);
             chooseLevelDropdown.Click();
-            Thread.Sleep(4000);
+            
             driver.FindElement(By.XPath("//*[@value='" + Level + "']")).Click();
             
 
             // Click on save button
+            WaitUtils.WaitToBeVisible(driver, "Xpath", "AddButton", 5);
             AddButton.Click();
-            Thread.Sleep(4000);
+          
 
         }
 
@@ -65,7 +71,7 @@ namespace MarsQASpecFlowProject.Pages
         {
 
             // click edit pencil icon for the existing record
-            Thread.Sleep(4000);
+            WaitUtils.WaitToBeVisible(driver, "Xpath", "EditPencilIcon", 5);
             EditPencilIcon.Click();
             
             if (newLanguage.Length > 0)
@@ -77,22 +83,42 @@ namespace MarsQASpecFlowProject.Pages
             if (newLevel.Length > 0)
             {
                 EditChooseLevelDropdown.Click();
-                Thread.Sleep(4000);
+                WaitUtils.WaitToBeVisible(driver, "Xpath", "EditChooseLevelDropdown", 5);
 
                 IWebElement EditChooseLevelOption = driver.FindElement(By.XPath("//*[@value='" + newLevel + "']"));
                 EditChooseLevelOption.Click();
 
             }
 
+            WaitUtils.WaitToBeVisible(driver, "Xpath", "UpdateButton", 5);
             UpdateButton.Click();
-            Thread.Sleep(4000);
+           
         }
 
-        //To Delete the language record
-        public void DeleteLanguageRecord(string newLanguage)
+        //To Delete Last Language records
+        public void DeleteLastLanguageRecords()
         {
-            LastDeleteIcon.Click();   
+            LastDeleteIcon.Click();
         }
+
+        //To Delete specific Language records
+        public void DeletespecificLanguageRecords(string newLanguage)
+        {
+
+            for (int i = 1; i <= LanguageRows.Count; i++)
+            {
+                var getLanguageName = driver.FindElement(By.XPath($"//div[@data-tab='first']//table/tbody[{i}]/tr/td[1]")).Text;
+
+                if(getLanguageName == newLanguage)
+                {
+                    IWebElement specificDeleteIcon = driver.FindElement(By.XPath($"//table[1]/tbody[{i}]//i[@class='remove icon']"));
+                    specificDeleteIcon.Click();
+                }
+            }
+
+        }
+
+                 
 
     }
 }

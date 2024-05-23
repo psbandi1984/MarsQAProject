@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj": {}
+    "C:\\Users\\Lenovo\\Prasanna\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj": {}
   },
   "projects": {
-    "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj": {
+    "C:\\Users\\Lenovo\\Prasanna\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Prasanna\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj",
         "projectName": "MarsQASpecFlowProject",
-        "projectPath": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\gitProjects\\MarsQAProject\\MarsQASpecFlowProject\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\Prasanna\\MarsQAProject\\MarsQASpecFlowProject\\MarsQASpecFlowProject.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Prasanna\\MarsQAProject\\MarsQASpecFlowProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
             },
             "NUnit": {
               "target": "Package",
-              "version": "[3.13.1, )"
+              "version": "[3.13.3, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
@@ -63,15 +63,15 @@
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.19.0, )"
+              "version": "[4.20.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.19.0, )"
+              "version": "[4.20.0, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[123.0.6312.12200, )"
+              "version": "[124.0.6367.9100, )"
             },
             "SeleniumExtras.WaitHelpers": {
               "target": "Package",

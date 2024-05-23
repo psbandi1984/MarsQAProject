@@ -3,6 +3,10 @@
       2.Edit Language
       3.Delete Language
 
+Background: 
+    Given User Cleanup data 
+  
+
  Scenario Outline: A. Create a new Language record 
     Given User log into Mars portal
     When User navigate to Language module
@@ -27,18 +31,9 @@
 	Then the tooltip message should be "This language is already exist in your language list." 
 
 
- Scenario Outline: B.Check the limit of the Language records
+ Scenario: B.Check the limit of the Language records
     Given User log into the MARS portal
-    And User Add Four Language records <Language> <Level>
 	Then the AddNewButton Does Not Exist
-    
-    Examples:
-    | Language      | Level               |
-      | 'English'   | 'Basic'             |
-      | 'Hindi'     | 'Conversational'    |
-      | 'Japanese'  | 'Native/Bilingual'  |
-      | '$@#nch'    | 'Fluent'            |
-    
       
 
  Scenario Outline: E. Edit an existing Language record
@@ -48,13 +43,22 @@
     Then the tooltip message should be "<newLanguage> has been updated to your languages"
 
     Examples:
-      | oldLanguage    | newLanguage    | oldLevel          | newLevel               |
-      | 'Hindi'        | 'Spanish'      | 'Conversational'  | 'Basic'                |
-      | 'Japanese'     | 'French'       | 'Native/Bilingual'| 'Conversational'       |
+      | oldLanguage | newLanguage | oldLevel           | newLevel           |
+      | 'Hindi'     | 'Spanish'   | 'Conversational'   | 'Basic'            |
+      | 'Japanese'  | 'French'    | 'Native/Bilingual' | 'Conversational'   |
+      
 
- Scenario: F. Delete an existing Language record
+ Scenario Outline: F. Delete an existing Language record
     Given User log into Mars portal 
     When User navigate to Language module
-    And User delete an existing Language record 'French'
-    Then the tooltip message should be "French has been deleted from your languages"
+    And User delete an existing Language record <newLanguage>
+    Then the tooltip message should be "<newLanguage> has been deleted from your languages"
+
+    Examples: 
+        | newLanguage |
+        | 'Spanish'   |
+        
+        
+
+        
 

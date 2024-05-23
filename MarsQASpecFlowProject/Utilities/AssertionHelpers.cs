@@ -1,5 +1,4 @@
-﻿using MarsQASpecFlowProject.Pages;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using OpenQA.Selenium;
 
 namespace MarsQASpecFlowProject.Utilities
