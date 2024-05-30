@@ -1,29 +1,38 @@
+using BoDi;
 using MarsQASpecFlowProject.Pages;
 using MarsQASpecFlowProject.Utilities;
 using OpenQA.Selenium;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 
+
 namespace MarsQASpecFlowProject.StepDefinitions
 {
     [Binding]
     public class LanguageStepDefinitions
     {
+
+        
         private LanguagePage languagePageObject;
-        //private readonly IWebDriver driver;
+       
         public LanguageStepDefinitions(LanguagePage languagePageObject)
         {
             this.languagePageObject = languagePageObject;
-            //this.driver = driver;
+                   
         }
 
+               
+        [When(@"User sign into Mars portal")]
+        public void WhenUserSignIntoMarsPortal()
+        {
+            AssertionHelpers.AssertLogin(languagePageObject);
+        }
 
-        [Given(@"User Cleanup data")]
-        public void GivenUserCleanupData()
+        [Then(@"User clean all existing data")]
+        public void ThenUserCleanAllExistingData()
         {
             TestDataManager.ClearLanguage(languagePageObject);
         }
-
 
 
         //Testcase 1,2,3 & 4
@@ -43,7 +52,7 @@ namespace MarsQASpecFlowProject.StepDefinitions
         [When(@"User create a new Language record '([^']*)' '([^']*)'")]
         public void WhenUserCreateANewLanguageRecord(string Language, string Level)
         {
-            
+           
             languagePageObject.CreateLanguageRecord(Language, Level);
         }
 
@@ -97,9 +106,11 @@ namespace MarsQASpecFlowProject.StepDefinitions
         [When(@"User delete an existing Language record '([^']*)'")]
         public void WhenUserDeleteAnExistingLanguageRecord(string newLanguage)
         {
-            languagePageObject.DeletespecificLanguageRecords(newLanguage);
+           languagePageObject.DeletespecificLanguageRecords(newLanguage);
             
         }
 
+       
     }
 }
+

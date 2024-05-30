@@ -43,6 +43,8 @@ namespace MarsQASpecFlowProject.Pages
             WaitUtils.WaitToBeVisible(driver, "Xpath", "LanguageTab", 10);
             LanguageTab.Click();
         }
+
+
         public void CreateLanguageRecord(string Language, string Level)
         {
             // Click on Add New button
@@ -98,7 +100,9 @@ namespace MarsQASpecFlowProject.Pages
         //To Delete Last Language records
         public void DeleteLastLanguageRecords()
         {
+            
             LastDeleteIcon.Click();
+            Thread.Sleep(1000);
         }
 
         //To Delete specific Language records
@@ -111,14 +115,14 @@ namespace MarsQASpecFlowProject.Pages
 
                 if(getLanguageName == newLanguage)
                 {
+                  
                     IWebElement specificDeleteIcon = driver.FindElement(By.XPath($"//table[1]/tbody[{i}]//i[@class='remove icon']"));
                     specificDeleteIcon.Click();
+                    Thread.Sleep(1000);
                 }
             }
 
         }
-
-                 
 
     }
 }

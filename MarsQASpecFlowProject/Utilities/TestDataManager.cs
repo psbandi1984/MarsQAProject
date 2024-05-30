@@ -18,7 +18,19 @@ namespace MarsQASpecFlowProject.Utilities
            
         }
 
-               
+        public static void ClearSkill(SkillsPage skillsPageObject)
+        {
+
+            int rowCount = skillsPageObject.SkillsRows.Count;
+
+            for (int i = 1; i <= rowCount; i++)
+            {
+                skillsPageObject.DeleteLastSkillRecords();
+            }
+
+        }
+
     }
+        
 }
 

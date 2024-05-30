@@ -9,17 +9,37 @@ namespace MarsQASpecFlowProject.StepDefinitions
     {
         private SkillsPage skillsPageObject;
 
-        public SkillStepDefinitions(IWebDriver driver)
+        public SkillStepDefinitions(SkillsPage skillsPageObject)
         {
-            skillsPageObject = new SkillsPage(driver);
+            this.skillsPageObject = skillsPageObject;
         }
+
+        [When(@"User log into Mars portal")]
+        public void WhenUserLogIntoMarsPortal()
+        {
+            AssertionHelpers.AssertLogin(skillsPageObject);
+        }
+
+        [When(@"User click on Skill tab")]
+        public void WhenUserClickOnSkillTab()
+        {
+            skillsPageObject.Click_SkillsTab();
+        }
+
+
+        [Then(@"User clean all existing data in Skill module")]
+        public void ThenUserCleanAllExistingDataInSkillModule()
+        {
+            TestDataManager.ClearSkill(skillsPageObject);
+        }
+
 
 
         [Given(@"User logs into Mars portal")]
         public void GivenUserLogsIntoMarsPortal()
         {
             AssertionHelpers.AssertLogin(skillsPageObject);
-            //TestDataManager.ClearSkillIfPresent(skillsPageObject);
+            
         }
     
 
@@ -45,7 +65,7 @@ namespace MarsQASpecFlowProject.StepDefinitions
         public void GivenUserLogsIntoMARSPortal()
         {
             AssertionHelpers.AssertLogin(skillsPageObject);
-            //TestDataManager.ClearSkillIfPresent(skillsPageObject);
+           
         }
 
         [When(@"User navigates to skill module")]
@@ -79,7 +99,7 @@ namespace MarsQASpecFlowProject.StepDefinitions
         [When(@"User delete an existing Skill record '([^']*)'")]
         public void WhenUserDeleteAnExistingSkillRecord(string Java)
         {
-            skillsPageObject.DeleteSkillsRecord(Java);
+            skillsPageObject.DeletespecificSkillRecords(Java);
         }
 
     }

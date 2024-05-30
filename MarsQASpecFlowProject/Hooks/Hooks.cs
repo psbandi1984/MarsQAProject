@@ -42,3 +42,40 @@ namespace MarsQASpecFlowProject.Hooks
 
     }  
 }
+
+//[Binding]
+//public class Hooks
+//{
+//    private readonly IObjectContainer _container;
+//    private List<(string Language, string Level)> addedLanguages;
+
+//    public Hooks(IObjectContainer container)
+//    {
+//        _container = container;
+//        addedLanguages = new List<(string Language, string Level)>();
+//    }
+
+//    [BeforeScenario]
+//    public void BeforeScenario()
+//    {
+//        var driver = new CommonDriver().Initialize();
+//        driver.Manage().Window.Maximize();
+//        var loginPage = new LoginPage(driver);
+//        loginPage.LoginSteps();
+
+//        var languagePage = new LanguagePage(driver);
+
+//        _container.RegisterInstanceAs<IWebDriver>(driver);
+//        _container.RegisterInstanceAs(languagePage);
+//    }
+
+//    [AfterScenario]
+//    public void AfterScenario()
+//    {
+//        var languagePage = _container.Resolve<LanguagePage>();
+//        TestDataManager.ClearLanguage(languagePage, addedLanguages);
+
+//        var driver = _container.Resolve<IWebDriver>();
+//        driver?.Quit();
+//    }
+//}

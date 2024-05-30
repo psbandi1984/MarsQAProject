@@ -73,28 +73,46 @@ namespace MarsQASpecFlowProject.Features
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void FeatureBackground()
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("A. Cleanup existing data")]
+        public void A_CleanupExistingData()
         {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A. Cleanup existing data", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 6
+ this.ScenarioInitialize(scenarioInfo);
 #line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
 #line 7
-    testRunner.Given("User Cleanup data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.When("User sign into Mars portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
+#line 8
+  testRunner.Then("User clean all existing data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("A. Create a new Language record")]
+        [NUnit.Framework.DescriptionAttribute("B. Create a new Language record")]
         [NUnit.Framework.TestCaseAttribute("\'English\'", "\'Basic\'", null)]
         [NUnit.Framework.TestCaseAttribute("\'Hindi\'", "\'Conversational\'", null)]
         [NUnit.Framework.TestCaseAttribute("\'Japanese\'", "\'Native/Bilingual\'", null)]
-        [NUnit.Framework.TestCaseAttribute("\'$@#nch\'", "\'Fluent\'", null)]
-        public void A_CreateANewLanguageRecord(string language, string level, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("\'$@#nch1234567890123456789012345678901234567890123456789\'", "\'Fluent\'", null)]
+        public void B_CreateANewLanguageRecord(string language, string level, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("Language", language);
             argumentsOfScenario.Add("Level", level);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A. Create a new Language record", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("B. Create a new Language record", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 10
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -105,9 +123,6 @@ namespace MarsQASpecFlowProject.Features
             else
             {
                 this.ScenarioStart();
-#line 6
-this.FeatureBackground();
-#line hidden
 #line 11
     testRunner.Given("User log into Mars portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
@@ -125,12 +140,12 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("D. Create a language record without data")]
-        public void D_CreateALanguageRecordWithoutData()
+        [NUnit.Framework.DescriptionAttribute("C.Check the limit of the Language records")]
+        public void C_CheckTheLimitOfTheLanguageRecords()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("D. Create a language record without data", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("C.Check the limit of the Language records", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 23
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -141,29 +156,29 @@ this.FeatureBackground();
             else
             {
                 this.ScenarioStart();
-#line 6
-this.FeatureBackground();
-#line hidden
 #line 24
- testRunner.Given("User log into MARS portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("User log into the MARS portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 25
- testRunner.And("User create a new language record without data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 26
- testRunner.Then("the tooltip message should be \"Please enter language and level\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the AddNewButton Does Not Exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("C. Create a language record with duplicate data")]
-        public void C_CreateALanguageRecordWithDuplicateData()
+        [NUnit.Framework.DescriptionAttribute("D. Edit an existing Language record")]
+        [NUnit.Framework.TestCaseAttribute("\'Hindi\'", "\'Spanish\'", "\'Conversational\'", "\'Basic\'", null)]
+        [NUnit.Framework.TestCaseAttribute("\'Japanese\'", "\'French\'", "\'Native/Bilingual\'", "\'Conversational\'", null)]
+        public void D_EditAnExistingLanguageRecord(string oldLanguage, string newLanguage, string oldLevel, string newLevel, string[] exampleTags)
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("C. Create a language record with duplicate data", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            argumentsOfScenario.Add("oldLanguage", oldLanguage);
+            argumentsOfScenario.Add("newLanguage", newLanguage);
+            argumentsOfScenario.Add("oldLevel", oldLevel);
+            argumentsOfScenario.Add("newLevel", newLevel);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("D. Edit an existing Language record", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 28
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -174,89 +189,16 @@ this.FeatureBackground();
             else
             {
                 this.ScenarioStart();
-#line 6
-this.FeatureBackground();
-#line hidden
 #line 29
- testRunner.Given("User log into MARS portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 30
- testRunner.And("User create a new language record \'English\' \'Basic\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 31
- testRunner.Then("the tooltip message should be \"This language is already exist in your language li" +
-                        "st.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("B.Check the limit of the Language records")]
-        public void B_CheckTheLimitOfTheLanguageRecords()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("B.Check the limit of the Language records", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 34
- this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 6
-this.FeatureBackground();
-#line hidden
-#line 35
-    testRunner.Given("User log into the MARS portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 36
- testRunner.Then("the AddNewButton Does Not Exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("E. Edit an existing Language record")]
-        [NUnit.Framework.TestCaseAttribute("\'Hindi\'", "\'Spanish\'", "\'Conversational\'", "\'Basic\'", null)]
-        [NUnit.Framework.TestCaseAttribute("\'Japanese\'", "\'French\'", "\'Native/Bilingual\'", "\'Conversational\'", null)]
-        public void E_EditAnExistingLanguageRecord(string oldLanguage, string newLanguage, string oldLevel, string newLevel, string[] exampleTags)
-        {
-            string[] tagsOfScenario = exampleTags;
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("oldLanguage", oldLanguage);
-            argumentsOfScenario.Add("newLanguage", newLanguage);
-            argumentsOfScenario.Add("oldLevel", oldLevel);
-            argumentsOfScenario.Add("newLevel", newLevel);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("E. Edit an existing Language record", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 39
- this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 6
-this.FeatureBackground();
-#line hidden
-#line 40
     testRunner.Given("User log into Mars portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 41
+#line 30
     testRunner.When("User navigate to Language module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 42
+#line 31
     testRunner.And(string.Format("User edit an existing Language record {0}  {1} {2} {3}", oldLanguage, newLanguage, oldLevel, newLevel), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 43
+#line 32
     testRunner.Then(string.Format("the tooltip message should be \"{0} has been updated to your languages\"", newLanguage), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -264,14 +206,47 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("F. Delete an existing Language record")]
-        [NUnit.Framework.TestCaseAttribute("\'Spanish\'", null)]
-        public void F_DeleteAnExistingLanguageRecord(string newLanguage, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("E. Delete an existing Language record")]
+        [NUnit.Framework.TestCaseAttribute("\'French\'", null)]
+        public void E_DeleteAnExistingLanguageRecord(string newLanguage, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("newLanguage", newLanguage);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("F. Delete an existing Language record", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("E. Delete an existing Language record", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 40
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 41
+    testRunner.Given("User log into Mars portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 42
+    testRunner.When("User navigate to Language module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 43
+    testRunner.And(string.Format("User delete an existing Language record {0}", newLanguage), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 44
+    testRunner.Then(string.Format("the tooltip message should be \"{0} has been deleted from your languages\"", newLanguage), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("F. Create a language record without data")]
+        public void F_CreateALanguageRecordWithoutData()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("F. Create a language record without data", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 51
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -282,20 +257,45 @@ this.FeatureBackground();
             else
             {
                 this.ScenarioStart();
-#line 6
-this.FeatureBackground();
-#line hidden
 #line 52
-    testRunner.Given("User log into Mars portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User log into MARS portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 53
-    testRunner.When("User navigate to Language module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("User create a new language record without data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 54
-    testRunner.And(string.Format("User delete an existing Language record {0}", newLanguage), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("the tooltip message should be \"Please enter language and level\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 55
-    testRunner.Then(string.Format("the tooltip message should be \"{0} has been deleted from your languages\"", newLanguage), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("G. Create a language record with duplicate data")]
+        public void G_CreateALanguageRecordWithDuplicateData()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("G. Create a language record with duplicate data", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 56
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 57
+ testRunner.Given("User log into MARS portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 58
+ testRunner.And("User create a new language record \'English\' \'Basic\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 59
+ testRunner.Then("the tooltip message should be \"This language is already exist in your language li" +
+                        "st.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -27,7 +27,8 @@ namespace MarsQASpecFlowProject.Pages
         public IWebElement EditPencilIcon => driver.FindElement(By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/table/tbody[4]/tr/td[3]/span[1]/i"));
         public IWebElement UpdateButton => driver.FindElement(By.XPath("//input[@value='Update']"));
         public IWebElement EditChooseLevelOption => driver.FindElement(By.XPath("//*[@value='\" + newLevel + \"']"));
-        public IWebElement LastDeleteIcon => driver.FindElement(By.XPath("//div[@data-tab='second']//table/tbody[last()]/tr/td[3]/span[2]"));
+        public IWebElement LastDeleteIcon => driver.FindElement(By.XPath("//div[@data-tab='second']//table/tbody[last()]//i[@class='remove icon']"));
+        
         public IList<IWebElement> SkillsRows => driver.FindElements(By.XPath("//div[@data-tab='second']//table/tbody"));
 
 
@@ -36,6 +37,7 @@ namespace MarsQASpecFlowProject.Pages
         {
             WaitUtils.WaitToBeVisible(driver, "Xpath", "SkillsTab", 10);
             SkillsTab.Click();
+            
         }
         public void CreateSkillsRecord(string Skills, string Level)
         {
@@ -50,14 +52,12 @@ namespace MarsQASpecFlowProject.Pages
             // Select Skills Level from dropdown list
             WaitUtils.WaitToBeVisible(driver, "Xpath", "chooseLevelDropdown", 5);
             chooseLevelDropdown.Click();
-            //Thread.Sleep(4000);
             driver.FindElement(By.XPath("//*[@value='" + Level + "']")).Click();
 
             // Click on save button
             WaitUtils.WaitToBeVisible(driver, "Xpath", "AddButton", 5);
             AddButton.Click();
-            //Thread.Sleep(4000);
-
+            
         }
 
         public void EditSkillsRecord(string oldSkills, string newSkills, string oldLevel, string newLevel)
@@ -65,7 +65,6 @@ namespace MarsQASpecFlowProject.Pages
 
             // click edit pencil icon for the existing record
             WaitUtils.WaitToBeVisible(driver, "Xpath", "EditPencilIcon", 5);
-            //Thread.Sleep(4000);
             EditPencilIcon.Click();
 
             if (newSkills.Length > 0)
@@ -77,7 +76,7 @@ namespace MarsQASpecFlowProject.Pages
             {
                 WaitUtils.WaitToBeVisible(driver, "Xpath", "EditChooseLevelDropdown", 5);
                 EditChooseLevelDropdown.Click();
-                //Thread.Sleep(4000);
+                
 
                 IWebElement EditChooseLevelOption = driver.FindElement(By.XPath("//*[@value='" + newLevel + "']"));
                 EditChooseLevelOption.Click();
@@ -86,13 +85,35 @@ namespace MarsQASpecFlowProject.Pages
 
             WaitUtils.WaitToBeVisible(driver, "Xpath", "UpdateButton", 5);
             UpdateButton.Click();
-            //Thread.Sleep(4000);
+            
         }
 
-        //To Delete the Skills record
-        public void DeleteSkillsRecord(string newSkill)
+       
+        //To Delete Last Skill records
+        public void DeleteLastSkillRecords()
         {
+
             LastDeleteIcon.Click();
+            Thread.Sleep(1000);
+        }
+
+        //To Delete specific Skill records
+        public void DeletespecificSkillRecords(string newSkill)
+        {
+
+            for (int i = 1; i <= SkillsRows.Count; i++)
+            {
+                var getSkillName = driver.FindElement(By.XPath($"//div[@data-tab='second']//table/tbody[{i}]/tr/td[1]")).Text;
+
+                if (getSkillName == newSkill)
+                {
+
+                    IWebElement specificDeleteIcon = driver.FindElement(By.XPath($"//div[@data-tab='second']//table/tbody[{i}]//i[@class='remove icon']"));
+                    specificDeleteIcon.Click();
+                    Thread.Sleep(1000);
+                }
+            }
+
         }
 
     }

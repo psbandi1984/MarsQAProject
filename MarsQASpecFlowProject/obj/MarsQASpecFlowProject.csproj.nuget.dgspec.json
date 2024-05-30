@@ -51,27 +51,23 @@
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.9.0, )"
-            },
-            "NUnit": {
-              "target": "Package",
-              "version": "[3.13.3, )"
+              "version": "[17.10.0, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[3.13.0, )"
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.20.0, )"
+              "version": "[4.21.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.20.0, )"
+              "version": "[4.21.0, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[124.0.6367.9100, )"
+              "version": "[125.0.6422.7800, )"
             },
             "SeleniumExtras.WaitHelpers": {
               "target": "Package",

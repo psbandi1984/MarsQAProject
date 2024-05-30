@@ -74,18 +74,12 @@ namespace MarsQASpecFlowProject.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("A. Create a new Skill record")]
-        [NUnit.Framework.TestCaseAttribute("\'SpecFlow\'", "\'Beginner\'", null)]
-        [NUnit.Framework.TestCaseAttribute("\'GitHub\'", "\'Intermediate\'", null)]
-        [NUnit.Framework.TestCaseAttribute("\'@1234\'", "\'Beginner\'", null)]
-        [NUnit.Framework.TestCaseAttribute("\'Music\'", "\'Expert\'", null)]
-        public void A_CreateANewSkillRecord(string skill, string level, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("A. Cleanup existing data")]
+        public void A_CleanupExistingData()
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("Skill", skill);
-            argumentsOfScenario.Add("Level", level);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A. Create a new Skill record", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A. Cleanup existing data", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 6
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -97,15 +91,51 @@ namespace MarsQASpecFlowProject.Features
             {
                 this.ScenarioStart();
 #line 7
-    testRunner.Given("User logs into Mars portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.When("User log into Mars portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
-    testRunner.When("User navigate to Skill module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("User click on Skill tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 9
+  testRunner.Then("User clean all existing data in Skill module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("B. Create a new Skill record")]
+        [NUnit.Framework.TestCaseAttribute("\'SpecFlow\'", "\'Beginner\'", null)]
+        [NUnit.Framework.TestCaseAttribute("\'GitHub\'", "\'Intermediate\'", null)]
+        [NUnit.Framework.TestCaseAttribute("\'@1234abc567890123456578901234567890123456789001233445556666777\'", "\'Beginner\'", null)]
+        [NUnit.Framework.TestCaseAttribute("\'Music\'", "\'Expert\'", null)]
+        public void B_CreateANewSkillRecord(string skill, string level, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("Skill", skill);
+            argumentsOfScenario.Add("Level", level);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("B. Create a new Skill record", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 11
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 12
+    testRunner.Given("User logs into Mars portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 13
+    testRunner.When("User navigate to Skill module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 14
     testRunner.And(string.Format("User create a new Skill record {0} {1}", skill, level), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 10
+#line 15
     testRunner.Then(string.Format("tooltip message should be \"{0} has been added to your skills\"", skill), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -113,76 +143,10 @@ namespace MarsQASpecFlowProject.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("B. Create a Skill record without data")]
-        public void B_CreateASkillRecordWithoutData()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("B. Create a Skill record without data", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 19
- this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 20
- testRunner.Given("User logs into MARS portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 21
-    testRunner.When("User navigates to skill module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 22
- testRunner.And("User create a new Skill record without data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 23
- testRunner.Then("tooltip message should be \"Please enter skill and experience level\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("C. Create a Skill record with duplicate data")]
-        public void C_CreateASkillRecordWithDuplicateData()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("C. Create a Skill record with duplicate data", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 25
- this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 26
- testRunner.Given("User logs into MARS portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 27
-    testRunner.When("User navigates to skill module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 28
- testRunner.And("User create a new Skill record \'SpecFlow\' \'Beginner\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 29
- testRunner.Then("tooltip message should be \"This skill is already exist in your skill list.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("D. Edit an existing Skill record")]
+        [NUnit.Framework.DescriptionAttribute("C. Edit an existing Skill record")]
         [NUnit.Framework.TestCaseAttribute("\'SpecFlow\'", "\'Beginner\'", "\'Cucumber\'", "\'Intermediate\'", null)]
         [NUnit.Framework.TestCaseAttribute("\'GitHub\'", "\'Java\'", "\'Intermediate\'", "\'Beginner\'", null)]
-        public void D_EditAnExistingSkillRecord(string oldSkill, string newSkill, string oldLevel, string newLevel, string[] exampleTags)
+        public void C_EditAnExistingSkillRecord(string oldSkill, string newSkill, string oldLevel, string newLevel, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
@@ -190,8 +154,8 @@ namespace MarsQASpecFlowProject.Features
             argumentsOfScenario.Add("newSkill", newSkill);
             argumentsOfScenario.Add("oldLevel", oldLevel);
             argumentsOfScenario.Add("newLevel", newLevel);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("D. Edit an existing Skill record", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 31
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("C. Edit an existing Skill record", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 24
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -201,16 +165,16 @@ namespace MarsQASpecFlowProject.Features
             else
             {
                 this.ScenarioStart();
-#line 32
+#line 25
     testRunner.Given("User logs into Mars portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 33
+#line 26
     testRunner.When("User navigate to Skill module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 34
+#line 27
     testRunner.And(string.Format("User edit an existing Skill record {0} {1} {2} {3}", oldSkill, newSkill, oldLevel, newLevel), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 35
+#line 28
     testRunner.Then(string.Format("tooltip message should be \"{0} has been updated to your skills\"", newSkill), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -218,13 +182,13 @@ namespace MarsQASpecFlowProject.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("E. Delete an existing Skill record")]
-        public void E_DeleteAnExistingSkillRecord()
+        [NUnit.Framework.DescriptionAttribute("D. Delete an existing Skill record")]
+        public void D_DeleteAnExistingSkillRecord()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("E. Delete an existing Skill record", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 42
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("D. Delete an existing Skill record", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 35
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -234,17 +198,83 @@ namespace MarsQASpecFlowProject.Features
             else
             {
                 this.ScenarioStart();
-#line 43
+#line 36
     testRunner.Given("User logs into Mars portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 44
+#line 37
     testRunner.When("User navigate to Skill module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 45
+#line 38
     testRunner.And("User delete an existing Skill record \'Java\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 46
+#line 39
     testRunner.Then("tooltip message should be \"Java has been deleted\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("E. Create a Skill record without data")]
+        public void E_CreateASkillRecordWithoutData()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("E. Create a Skill record without data", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 41
+    this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 42
+ testRunner.Given("User logs into MARS portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 43
+    testRunner.When("User navigates to skill module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 44
+ testRunner.And("User create a new Skill record without data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 45
+ testRunner.Then("tooltip message should be \"Please enter skill and experience level\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("F. Create a Skill record with duplicate data")]
+        public void F_CreateASkillRecordWithDuplicateData()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("F. Create a Skill record with duplicate data", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 47
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 48
+ testRunner.Given("User logs into MARS portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 49
+    testRunner.When("User navigates to skill module", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 50
+ testRunner.And("User create a new Skill record \'SpecFlow\' \'Beginner\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 51
+ testRunner.Then("tooltip message should be \"This skill is already exist in your skill list.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
