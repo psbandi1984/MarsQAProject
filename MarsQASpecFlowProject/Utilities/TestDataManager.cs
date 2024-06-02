@@ -1,6 +1,4 @@
 ﻿using MarsQASpecFlowProject.Pages;
-using OpenQA.Selenium;
-using System.Reflection.Metadata.Ecma335;
 
 namespace MarsQASpecFlowProject.Utilities
 {

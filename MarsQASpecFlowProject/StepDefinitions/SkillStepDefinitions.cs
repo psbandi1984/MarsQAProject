@@ -1,6 +1,5 @@
 using MarsQASpecFlowProject.Pages;
 using MarsQASpecFlowProject.Utilities;
-using OpenQA.Selenium;
 
 namespace MarsQASpecFlowProject.StepDefinitions
 {

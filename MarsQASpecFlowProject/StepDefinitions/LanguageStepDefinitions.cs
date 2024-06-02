@@ -1,9 +1,5 @@
-using BoDi;
 using MarsQASpecFlowProject.Pages;
 using MarsQASpecFlowProject.Utilities;
-using OpenQA.Selenium;
-using TechTalk.SpecFlow;
-using TechTalk.SpecFlow.Assist;
 
 
 namespace MarsQASpecFlowProject.StepDefinitions
